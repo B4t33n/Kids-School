@@ -152,6 +152,16 @@ marquee{
 .curriculum-card-item>p{
     margin: 10px 0;
 }
+.arrow{
+    text-align: center;
+    margin-top: 70px;
+}
+.arrow-icon{
+    background-color: rgb(252, 170, 17);
+    border-radius: 100%;
+    padding: 10px 15px;
+    color: white;
+}
 
 
 
@@ -198,5 +208,8 @@ marquee{
     .curriculum-card{
         flex-direction: column;
         gap: 30px;
+    }
+    .arrow{
+        display: none;
     }
 }
