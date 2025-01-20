@@ -18,6 +18,13 @@ ul, li, a{
     width: 90rem;
     margin: 0 auto;
 }
+marquee{
+    height: 2rem;
+    margin-top: 10px;
+    color: orange;
+    font-weight: 700;
+    font-size: 17px;
+}
 
 
 
@@ -70,8 +77,29 @@ ul, li, a{
     font-weight: 600;
 }
 
+/* banner style */
 
-
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+.banner-header{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 65px;
+}
+.banner-disc{
+    font-size: larger;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 20px 0;
+}
+.btn{
+    background-color: black !important;
+}
 
 
 /* mobile responsive style */
@@ -81,6 +109,9 @@ ul, li, a{
     .container{
         width: 95%;
         margin-top: 10px;
+    }
+    marquee{
+        display: none;
     }
 
     /* navbar style */
@@ -95,5 +126,16 @@ ul, li, a{
         display: block;
         font-weight: 700;
         font-size: 20px;
+    }
+
+    /* banner style */
+    .banner{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
+    .banner-image>img{
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
