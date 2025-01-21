@@ -52,6 +52,7 @@ marquee{
     border: none;
     color: white;
     font-weight: 600;
+    cursor: pointer;
 }
 
 
@@ -155,6 +156,7 @@ marquee{
 .arrow{
     text-align: center;
     margin-top: 70px;
+    cursor: pointer;
 }
 .arrow-icon{
     background-color: rgb(252, 170, 17);
@@ -163,9 +165,87 @@ marquee{
     color: white;
 }
 
+/* story section style */
+.story{
+    margin-top: 100px;
+    background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    margin-bottom: 20px;
+}
+.story>h1{
+    margin-top: 20px;
+    font-size: 38px;
+    text-align: center;
+}
 
+.full-image{
+    width: 33.75rem;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+}
+.image>img{
+    border-radius: 16px 16px 0px 0px;
+    background: rgb(217, 217, 217);
+}
+.content{
+    padding: 0 10px;
+}
+.content>h1{
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.content>p{
+    font-size: 16px;
+    font-weight: 500;
+}
+.story-btn{
+    border-radius: 47.93px;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    position: relative;
+    top: -22px;
+    background: rgb(60, 216, 232);
+}
 
+.story-content{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 90px;
+}
 
+.card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.card-item{
+    border-radius: 16px;
+    width: 18.125rem;
+    background: rgb(255, 255, 255);
+}
+.card-item>h1{
+    font-size: 21px;
+    font-weight: 600;
+    padding: 10px 10px;
+}
+.View{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.View>button{
+    border-radius: 12px;
+    padding: 10px 25px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: white;
+    background: rgb(17, 17, 17);
+}
 
 /* mobile responsive style */
 
@@ -211,5 +291,25 @@ marquee{
     }
     .arrow{
         display: none;
+    }
+
+    /* story style */
+    .full-image{
+        display: none;
+    }
+
+    .image>img{
+        width: 100%;
+    }
+    .card-item{
+        width: 10.8rem;
+    }
+    .card-item>h1{
+        font-size: 17px;
+        list-style: 18px;
+    }
+    .View{
+        width: 100%;
+        margin-top: 10px;
     }
 }
