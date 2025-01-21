@@ -11,7 +11,7 @@
 ul, li, a{
     list-style: none;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .container{
@@ -169,7 +169,7 @@ marquee{
 .story{
     margin-top: 100px;
     background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
-    margin-bottom: 20px;
+  
 }
 .story>h1{
     margin-top: 20px;
@@ -247,6 +247,41 @@ marquee{
     background: rgb(17, 17, 17);
 }
 
+/* footer style */
+.footer{
+    height: 31rem;
+    background: rgb(1, 172, 253);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.education{
+    width: 20%;
+}
+.education>p{
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 15px;
+}
+.kids{
+    display: flex;
+    align-items: center;
+}
+
+.nav, ul,li{
+    padding: 5px;
+}
+
+.social-icon{
+    padding: 15px;
+}
+
+
+
+
+
+
 /* mobile responsive style */
 
 @media screen and (max-width: 576px) {
@@ -302,14 +337,24 @@ marquee{
         width: 100%;
     }
     .card-item{
-        width: 10.8rem;
+        width: 10rem;
     }
     .card-item>h1{
         font-size: 17px;
         list-style: 18px;
     }
     .View{
-        width: 100%;
+        width: 90%;
         margin-top: 10px;
+    }
+
+    .footer{
+        width: 100%;
+        flex-direction: column;
+        align-items: start;
+    }
+    .education{
+        width: 100%;
+        margin: 10px 0;
     }
 }
