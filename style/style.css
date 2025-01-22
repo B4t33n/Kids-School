@@ -277,7 +277,9 @@ marquee{
     padding: 15px;
 }
 
-
+hr{
+    display: none;
+}
 
 
 
@@ -295,7 +297,10 @@ marquee{
     }
 
     /* navbar style */
-
+    hr{
+        display: block;
+        margin-top: 10px;
+    }
     .nav-item, 
     .nav-btn,
     .logo-name{
